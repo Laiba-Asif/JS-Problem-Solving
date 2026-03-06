@@ -44,6 +44,13 @@ var subsetsWithDup = function(nums) {
     return allSubsets;
 };
 
+// 1,2,2,3,2     1,2,2,2,3
+
+//     []
+// [1]                        []
+// [1,2] [1]                [2]  []
+// [1,2,2] [1,2]             [2,2] []
+
 
 // Time Complexity : O(n * 2^n)
 // Space Complexity : O(n * 2^n)
